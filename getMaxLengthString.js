@@ -7,8 +7,9 @@ function getMaxLengthString(arrayOfString) {
     let array= []
     let arrayOfStringlength = arrayOfString[0].length
 
-    for (let i = 0; i <arrayOfString[0].length; i++){
+    for (let i = 0; i <arrayOfString.length; i++){
       if (arrayOfString[i].length > arrayOfStringlength){
+
       arrayOfStringlength=arrayOfString[i].length
     }
   }
@@ -22,7 +23,5 @@ function getMaxLengthString(arrayOfString) {
   
 }
 }
-
-
 
  module.exports = getMaxLengthString
